@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.mobile-nav{
+    backdrop-filter: blur(10px);
+}
+.desktop-nav{
+    display: none;
+}
+.my-container{
+    font-family:shabnam;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .mobile-nav{
+        display: none;
+    }
+    .desktop-nav
+    {
+        display: flex;
+        backdrop-filter: blur(10px);
+    }
+    .search-bar-div{
+        padding-top: 160px;
+    }
+}
