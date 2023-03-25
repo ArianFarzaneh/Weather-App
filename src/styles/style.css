@@ -10,6 +10,9 @@
 .my-container{
     font-family:shabnam;
 }
+.search-input::placeholder{
+    font-weight: bold;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
