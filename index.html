@@ -14,8 +14,9 @@
       </nav>
 
       <nav class="desktop-nav w-[100%] bg-transparent flex pt-4 pb-4 pr-24 rounded-b-lg fixed mb-10">
-        <div class="user-btn  w-6/12 ml-[10%] text-6xl text-white mt-6"><ion-icon name="person-circle"></ion-icon></div>
-        <div class="w-6/12" dir="rtl">
+        <!-- <div class="user-btn  w-6/12 ml-[10%] text-6xl text-white mt-6"><ion-icon name="person-circle"></ion-icon></div> -->
+        <button id="login-btn" class="register-btn ml-[10%] mt-6 h-max p-3 rounded-3xl text-white bg-gray-600">Login/Register</button>
+        <div class="w-6/12 ml-72" dir="rtl">
           <img class="h-[80px] rounded-full mr-6 mb-[5px]" src="src/img/weather-2021-12-07.png" alt="">
           <p class="font-bold text-white">Arian Weather App</p>
         </div>
@@ -26,6 +27,9 @@
       <div id="info-container" class="">
         
       </div>
+    </div>
+    <div id="login-modal" class="login-section transition ease-in-out delay-150 bg-slate-700 opacity-100 backdrop-blur-sm flex items-end h-0 fixed w-full bottom-0 right-0">
+      <div class="bg-blue-400 rounded-t-md h-[70%] w-full"></div>
     </div>
     <script type="module" src="/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

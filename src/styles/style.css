@@ -13,7 +13,10 @@
 .search-input::placeholder{
     font-weight: bold;
 }
-
+.register-btn
+{
+    font-family: lalezar;
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }
