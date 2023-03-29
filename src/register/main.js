@@ -8,7 +8,7 @@ export async function registration(e)
         id:`${registerUser.value}`,
         password:`${registerPass.value}`
     }
-    await fetch('http://localhost:7001/DATA',
+    await fetch('http://localhost:3000/DATA',
     {
         method:'POST',
         headers:{
