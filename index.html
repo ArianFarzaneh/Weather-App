@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="src/styles/style.css">
   </head>
   <body>
-    <div id="app" class=" my-container bg-gradient-to-r from-green-200 to-blue-800 w-[100%] h-[1000px] transition ease-in-out delay-3000">
+    <div id="app" class="hidden my-container bg-gradient-to-r from-green-200 to-blue-800 w-[100%] h-[1000px] transition ease-in-out delay-3000">
 
       <nav class="mobile-nav w-[100%] bg-transparent flex pt-4 pb-3 rounded-b-lg fixed text-white">
-        <button id="logout-btn-mobile" class="ml-[10%] mt-6 h-max p-3 rounded-3xl text-white bg-gray-600">Logout</button>
-        <button id="dark-mode-btn-mobile" class="ml-1 mt-6 h-max p-3 rounded-3xl text-white bg-gray-600"><ion-icon name="moon"></ion-icon></button>
+        <button id="logout-btn-mobile" class="ml-[10%] mt-6 h-max p-3 rounded-3xl text-white bg-red-400">Logout</button>
+        <button id="dark-mode-btn-mobile" class="ml-1 mt-6 h-max p-3 rounded-3xl text-white bg-purple-600"><ion-icon name="moon"></ion-icon></button>
       </nav>
 
       <nav class="desktop-nav w-[100%] bg-transparent flex pt-4 pb-4 pr-24 rounded-b-lg fixed mb-10">
         <!-- <div class="user-btn  w-6/12 ml-[10%] text-6xl text-white mt-6"><ion-icon name="person-circle"></ion-icon></div> -->
-        <button id="logout-btn" class="ml-[10%] mt-6 h-max p-3 rounded-3xl text-white bg-gray-600">Logout</button>
-        <button id="dark-mode-btn" class="ml-1 mt-6 h-max p-3 rounded-3xl text-white bg-gray-600"><ion-icon name="moon"></ion-icon></button>
+        <button id="logout-btn" class="ml-[10%] mt-6 h-max p-3 rounded-3xl text-white bg-red-400">Logout</button>
+        <button id="dark-mode-btn" class="ml-1 mt-6 h-max p-3 rounded-3xl text-white bg-purple-600"><ion-icon name="moon"></ion-icon></button>
         <div class="w-6/12 ml-72" dir="rtl">
           <img class="h-[80px] rounded-full mr-6 mb-[5px]" src="src/img/weather-2021-12-07.png" alt="">
           <p class="font-bold text-white">Arian Weather App</p>
@@ -33,26 +33,26 @@
     </div>
 
     <!-- login and register section: -->
-    <div id="login-modal" class="hidden login-section pt-20 transition ease-in-out delay-150 bg-gradient-to-r from-green-200 to-blue-800 w-[100%] opacity-100 backdrop-blur-sm items-end lg:h-[100vh] fixed bottom-0 right-0">
-      <div class="text-white text-5xl font-bold text-center align-middle italic">Register or Login</div>
-      <div class="bg-white rounded-t-md lg:h-[70vh] bottom-0 absolute w-full  block lg:flex">
-        <div class="register-section w-6/12 bg-white pt-16 border-r-2 border-black">
+    <div id="login-modal" class="login-section pt-20 transition ease-in-out delay-150 bg-gradient-to-r from-green-200 to-blue-800 w-[100%] opacity-100 backdrop-blur-sm items-end lg:h-[100vh] fixed bottom-0 right-0">
+      <div class="text-white text-5xl font-bold text-center align-middle italic sm:hidden lg:block">Register or Login</div>
+      <div class="bg-white rounded-t-md sm:h-[100vh] lg:h-[70vh] bottom-0 absolute w-full  block lg:flex">
+        <div class="register-section sm:w-12/12 lg:w-6/12 lg:bg-white pt-16 border-r-2 border-black">
           <form class="text-center" action="">
-            <div class="font-bold mb-20 text-4xl text-red-600">Register</div>
-            <label class="font-bold" for="registerUserInput">enter your username:</label><br>
+            <div class="font-bold mb-20 text-4xl text-green-600">Register</div>
+            <label class="text-lg font-bold" for="registerUserInput">username:</label><br>
             <input class="w-[50%] h-[40px] pl-4 mb-4 rounded-full border-black border-2" type="text" class="" name="registerUserInput" id="register-user" placeholder="enter your username"><br>
-            <label class="font-bold" for="registerPassInput">enter your password:</label><br>
+            <label class="text-lg font-bold" for="registerPassInput">password:</label><br>
             <input class="w-[50%] h-[40px] pl-4 mb-4 rounded-full border-black border-2" type="password" minlength="8" name="registerPassInput" id="register-pass" placeholder="enter your password"><br>
-            <input class="bg-red-600 rounded-full text-white p-2 font-bold" type="submit" value="Register" id="register-submit-btn">
+            <input class="bg-green-600 rounded-full text-white p-2 font-bold" type="submit" value="Register" id="register-submit-btn">
           </form>
         </div>
 
-        <div class="login-section w-6/12 bg-white pt-16">
+        <div class="login-section sm:w-12/12 lg:w-6/12 lg:bg-white pt-16">
           <form class="text-center" action="">
             <div class="font-bold mb-20 text-4xl text-blue-600">Login</div>
-            <label class="font-bold" for="LoginUserInput">enter your username:</label><br>
+            <label class="text-lg font-bold" for="LoginUserInput">username:</label><br>
             <input class="w-[50%] h-[40px] pl-4 mb-4 rounded-full border-black border-2" type="text" name="LoginUserInput" id="login-user" placeholder="enter your username"><br>
-            <label class="font-bold" for="LoginPassInput">enter your password:</label><br>
+            <label class="text-lg font-bold" for="LoginPassInput">password:</label><br>
             <input class="w-[50%] h-[40px] pl-4 mb-4 rounded-full border-black border-2" type="password" minlength="8" name="LoginPassInput" id="login-pass" placeholder="enter your password"><br>
             <input class="bg-blue-600 rounded-full text-white p-2 font-bold" type="submit" value="Login" id="login-btn">
           </form>
