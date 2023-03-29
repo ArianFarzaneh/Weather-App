@@ -6,7 +6,7 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div id="app" class="my-container bg-gradient-to-r from-green-200 to-blue-800 w-[100%] h-[10000px]">
+    <div id="app" class="hidden my-container bg-gradient-to-r from-green-200 to-blue-800 w-[100%] h-[10000px]">
 
       <nav class="mobile-nav w-[100%] bg-transparent flex pt-4 pb-3 rounded-b-lg fixed text-white">
         <div class="user-btn  w-6/12 ml-[10%] text-5xl"><ion-icon name="person-circle"></ion-icon></div>
@@ -15,7 +15,7 @@
 
       <nav class="desktop-nav w-[100%] bg-transparent flex pt-4 pb-4 pr-24 rounded-b-lg fixed mb-10">
         <!-- <div class="user-btn  w-6/12 ml-[10%] text-6xl text-white mt-6"><ion-icon name="person-circle"></ion-icon></div> -->
-        <button id="login-btn" class="register-btn ml-[10%] mt-6 h-max p-3 rounded-3xl text-white bg-gray-600">Login/Register</button>
+        <button id="" class="register-btn ml-[10%] mt-6 h-max p-3 rounded-3xl text-white bg-gray-600">Login/Register</button>
         <div class="w-6/12 ml-72" dir="rtl">
           <img class="h-[80px] rounded-full mr-6 mb-[5px]" src="src/img/weather-2021-12-07.png" alt="">
           <p class="font-bold text-white">Arian Weather App</p>
@@ -28,8 +28,33 @@
         
       </div>
     </div>
-    <div id="login-modal" class="login-section transition ease-in-out delay-150 bg-slate-700 opacity-100 backdrop-blur-sm flex items-end h-0 fixed w-full bottom-0 right-0">
-      <div class="bg-blue-400 rounded-t-md h-[70%] w-full"></div>
+
+    <!-- login and register section: -->
+    <div id="login-modal" class="login-section pt-20 transition ease-in-out delay-150 bg-gradient-to-r from-green-200 to-blue-800 w-[100%] opacity-100 backdrop-blur-sm items-end h-[100vh] fixed bottom-0 right-0">
+      <div class="text-white text-5xl font-bold text-center align-middle italic">Register or Login</div>
+      <div class="bg-white rounded-t-md h-[70vh] bottom-0 absolute w-full flex">
+        <div class="register-section w-6/12 bg-gray-300 pt-16">
+          <form class="text-center" action="">
+            <div class="font-bold mb-20 text-4xl text-black">Register</div>
+            <label class="font-bold" for="registerUserInput">enter your username:</label><br>
+            <input class="w-[50%] h-[40px] pl-4 mb-4 rounded-full" type="text" class="" name="registerUserInput" id="register-user" placeholder="enter your username"><br>
+            <label class="font-bold" for="registerPassInput">enter your password:</label><br>
+            <input class="w-[50%] h-[40px] pl-4 mb-4 rounded-full" type="password" name="registerPassInput" id="register-pass" placeholder="enter your password"><br>
+            <input class="bg-blue-600 rounded-full text-white p-2" type="submit" value="Register" id="register-submit-btn">
+          </form>
+        </div>
+
+        <div class="login-section w-6/12 bg-gray-300 pt-16">
+          <form class="text-center" action="">
+            <div class="font-bold mb-20 text-4xl text-black">Login</div>
+            <label class="font-bold" for="LoginUserInput">enter your username:</label><br>
+            <input class="w-[50%] h-[40px] pl-4 mb-4 rounded-full" type="text" name="LoginUserInput" id="" placeholder="enter your username"><br>
+            <label class="font-bold" for="LoginPassInput">enter your password:</label><br>
+            <input class="w-[50%] h-[40px] pl-4 mb-4 rounded-full" type="password" name="LoginPassInput" id="" placeholder="enter your password"><br>
+            <input class="bg-blue-600 rounded-full text-white p-2" type="submit" value="Login" id="login-btn">
+          </form>
+        </div>
+      </div> 
     </div>
     <script type="module" src="/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
