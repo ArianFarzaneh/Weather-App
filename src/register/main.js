@@ -1,3 +1,4 @@
+import { jsonServerPath } from "../../jsonSeverPath/main"
 export const registerUser=document.getElementById('register-user')
 export const registerPass=document.getElementById('register-pass')
 export const registerBtn=document.getElementById('register-submit-btn')
@@ -8,7 +9,7 @@ export async function registration(e)
         id:`${registerUser.value}`,
         password:`${registerPass.value}`
     }
-    await fetch('http://localhost:3000/DATA',
+    await fetch(`${jsonServerPath}/data`,
     {
         method:'POST',
         headers:{

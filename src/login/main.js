@@ -1,3 +1,4 @@
+import { jsonServerPath } from "../../jsonSeverPath/main"
 const container=document.getElementById('app')
 const loginModal = document.getElementById('login-modal')
 export const loginBtn = document.getElementById('login-btn')
@@ -6,7 +7,7 @@ export const loginPass = document.getElementById('login-pass')
 export async function loginfunc(e)
 {
     try {
-        const jsonresponse = await(await fetch('http://localhost:3000/data')).json()
+        const jsonresponse = await(await fetch(`${jsonServerPath}/data`)).json()
         const jsondata = await jsonresponse;
         checkValid(jsondata)
     } catch (err) { console.log(`${err}`)}
