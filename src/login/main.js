@@ -1,4 +1,4 @@
-import { jsonServerPath } from "../../jsonSeverPath/main"
+import { jsonServerPath } from "../jsonSeverPath/main"
 const container=document.getElementById('app')
 const loginModal = document.getElementById('login-modal')
 export const loginBtn = document.getElementById('login-btn')

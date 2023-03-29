@@ -1,4 +1,4 @@
-import { jsonServerPath } from "../../jsonSeverPath/main"
+import { jsonServerPath } from "../jsonSeverPath/main"
 export const registerUser=document.getElementById('register-user')
 export const registerPass=document.getElementById('register-pass')
 export const registerBtn=document.getElementById('register-submit-btn')
