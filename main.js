@@ -26,5 +26,5 @@ registerBtn.addEventListener('click',(e)=>
 loginBtn.addEventListener('click',(e)=>
 {
   e.preventDefault()
-  loginfunc()
+  loginfunc(e)
 })
