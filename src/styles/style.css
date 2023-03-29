@@ -17,6 +17,11 @@
 {
     font-family: lalezar;
 }
+.dark-mode-class
+{
+    background-color: black !important;
+    transition: ease-in-out 1000ms ;
+}
 /* #login-modal
 {
     transition: ease-in-out 2000ms;

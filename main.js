@@ -1,14 +1,14 @@
 'use strict'
 const search = document.getElementById('search-input');
-const loginModal=document.getElementById('login-modal');
+export const loginModal=document.getElementById('login-modal');
 export const container = document.getElementById('app');
 import './src/styles/style.css';
 import { getData } from './src/getData/main';
 import { Search } from './src/Search/main';
-import { registerBtn } from './src/register/main';
-import { registration } from './src/register/main';
-import { loginBtn } from './src/login/main';
-import { loginfunc } from './src/login/main';
+import { registerBtn , registration } from './src/register/main';
+import { loginBtn , loginfunc } from './src/login/main';
+import { logoutBtn , logoutfunc , logoutBtnMobile } from './src/logout/main';
+import { darkModeBtn , darkModeFunc , darkModeBtnMobile } from './src/darkMode/main';
 import { debounce } from "lodash";
 
 search.addEventListener('input',
@@ -27,4 +27,24 @@ loginBtn.addEventListener('click',(e)=>
 {
   e.preventDefault()
   loginfunc(e)
+})
+
+logoutBtn.addEventListener('click',()=>
+{
+  logoutfunc()
+})
+
+logoutBtnMobile.addEventListener('click',()=>
+{
+  logoutfunc()
+})
+
+darkModeBtn.addEventListener('click',()=>
+{
+  darkModeFunc()
+})
+
+darkModeBtnMobile.addEventListener('click',()=>
+{
+  darkModeFunc()
 })
